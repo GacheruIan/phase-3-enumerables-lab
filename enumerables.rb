@@ -79,5 +79,9 @@ end
 # the average heat level of all the spicy foods in the array
 def average_heat_level(spicy_foods)
   # your code here
-  return 6
+  result_level = [];
+  spicy_foods.each do |food|
+    result_level << food[:heat_level]
+  end
+  result_level.sum / spicy_foods.length
 end
